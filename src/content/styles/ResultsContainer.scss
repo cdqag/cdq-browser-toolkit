@@ -1,0 +1,12 @@
+@import "/src/common/styles/colors.scss";
+
+@include inject-colors($el: "#cdq-browser-toolkit");
+
+#cdq-browser-toolkit {
+  all: initial;
+  position: absolute;
+
+  & > div {
+    all: initial;
+  }
+}

@@ -1,0 +1,21 @@
+#footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.5rem 0.5rem;
+
+  .cloudAppsLink {
+    flex-shrink: 0;
+    a {
+      font-style: normal;
+      text-decoration: none;
+      color: var(--cdq-browser-toolkit-highlight);
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+}

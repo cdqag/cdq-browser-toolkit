@@ -1,0 +1,15 @@
+.categoryContainer {
+  list-style-type: none;
+
+  .categoryTitle {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--cdq-browser-toolkit-sub-text);
+    margin: 0;
+  }
+
+  .categoryElements {
+    padding-inline-start: 1rem;
+    margin-bottom: 1.5rem;
+  }
+}

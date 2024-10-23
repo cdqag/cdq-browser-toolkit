@@ -1,0 +1,33 @@
+@mixin inject-colors($el: ":root") {
+  #{$el} {
+    --cdq-browser-toolkit-main-text: #0c0c0d;
+    --cdq-browser-toolkit-sub-text: #737373;
+    --cdq-browser-toolkit-line: #ededf0;
+    --cdq-browser-toolkit-button: #d7d7db;
+    --cdq-browser-toolkit-highlight: #5595ff;
+    --cdq-browser-toolkit-main-bg: #ffffff;
+    --cdq-browser-toolkit-sub-bg: #ffffff;
+    --cdq-browser-toolkit-attention: #ff4f4f;
+    --cdq-browser-toolkit-error: #d70022;
+    --cdq-browser-toolkit-warn: #ff8f00;
+    --cdq-browser-toolkit-success: #058b00;
+    --cdq-browser-toolkit-info: #0a84ff;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    #{$el} {
+      --cdq-browser-toolkit-main-text: #e6e6e6;
+      --cdq-browser-toolkit-sub-text: #aaaaaa;
+      --cdq-browser-toolkit-line: #373737;
+      --cdq-browser-toolkit-button: #929292;
+      --cdq-browser-toolkit-highlight: #5595ff;
+      --cdq-browser-toolkit-main-bg: #181818;
+      --cdq-browser-toolkit-sub-bg: #101010;
+      --cdq-browser-toolkit-attention: #ed5f5f;
+      --cdq-browser-toolkit-error: #ca1532;
+      --cdq-browser-toolkit-warn: #ee8e12;
+      --cdq-browser-toolkit-success: #2a9c26;
+      --cdq-browser-toolkit-info: #1471d0;
+    }
+  }  
+}

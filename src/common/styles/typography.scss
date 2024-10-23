@@ -1,0 +1,9 @@
+$font-family: "Segoe UI", "San Francisco", "Ubuntu", "Fira Sans", "Roboto", "Arial", "Helvetica", sans-serif;
+
+@mixin font-family($important: false) {
+  @if $important {
+    font-family: $font-family !important;
+  } @else {
+    font-family: $font-family;
+  }
+}

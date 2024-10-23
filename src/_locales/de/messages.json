@@ -1,0 +1,390 @@
+{
+  "extName": {
+    "message": "CDQ Browser Toolkit"
+  },
+  "extDescription": {
+    "message": "CDQ Browser Toolkit."
+  },
+  "donateWithPaypalLabel": {
+    "message": "Spenden via PayPal"
+  },
+  "donateLabel": {
+    "message": "Spenden"
+  },
+  "enableOnThisPage": {
+    "message": "Übersetzung auf dieser Seite aktivieren"
+  },
+  "disableOnThisPage": {
+    "message": "Übersetzung auf dieser Seite deaktivieren"
+  },
+  "initialTextArea": {
+    "message": "Text eingeben"
+  },
+  "showLink": {
+    "message": "Diese Seite übersetzen"
+  },
+  "openInGoogleLabel": {
+    "message": "Öffne in Google Translate"
+  },
+  "openInDeeplLabel": {
+    "message": "In DeepL-Übersetzer öffnen"
+  },
+  "copyLabel": {
+    "message": "Kopieren"
+  },
+  "copiedLabel": {
+    "message": "Kopiert."
+  },
+  "listenLabel": {
+    "message": "Anhören"
+  },
+  "targetLangLabel": {
+    "message": "Zielsprache"
+  },
+  "allLangLabel": {
+    "message": "Alle Sprachen"
+  },
+  "recentLangLabel": {
+    "message": "Kürzlich verwendete Sprachen"
+  },
+  "settingsLabel": {
+    "message": "Einstellungen"
+  },
+  "generalLabel": {
+    "message": "Allgemein"
+  },
+  "apiKeyLabel": {
+    "message": "API-Schlüssel"
+  },
+  "apiKeyCaptionLabel": {
+    "message": "Geben Sie Ihren API-Schlüssel ein"
+  },
+  "webPageLabel": {
+    "message": "Internetseite"
+  },
+  "ifShowCandidateLabel": {
+    "message": "Weitere Übersetzungsvorschläge anzeigen"
+  },
+  "ifShowCandidateCaptionLabel": {
+    "message": "Zeige weitere Übersetzungsvorschläge an, wenn ein einzelnes Wort übersetzt wird."
+  },
+  "whenSelectTextLabel": {
+    "message": "Verhalten beim Auswählen von Text"
+  },
+  "ifAutoTranslateLabel": {
+    "message": "Übersetzungsfeld anzeigen"
+  },
+  "ifAutoTranslateCaptionLabel": {
+    "message": "Übersetzungsfeld direkt anzeigen, ohne den Knopf dafür anzuzeigen."
+  },
+  "ifCheckLangLabel": {
+    "message": "Den Übersetzen-Knopf nicht anzeigen, wenn keine Übersetzung notwendig ist"
+  },
+  "ifCheckLangCaptionLabel": {
+    "message": "Erkennt die Sprache des ausgewählten Textes und zeigt den Übersetzen-Knopf nicht an, wenn der Text bereits in der Zielsprache ist."
+  },
+  "ifChangeSecondLangOnPageCaptionLabel": {
+    "message": "Erkennt die Sprache des ausgewählten Textes, und wenn sie mit der Standard-Zielsprache übereinstimmt, übersetzen Sie sie in die zweite Sprache."
+  },
+  "ifOnlyTranslateWhenModifierKeyPressedLabel": {
+    "message": "Bei gedrückter Modifikator-Taste übersetzen"
+  },
+  "ifOnlyTranslateWhenModifierKeyPressedCaptionLabel": {
+    "message": "Übersetzung nur bei gedrückter Modifikator-Taste anzeigen."
+  },
+  "modifierKeyLabel": {
+    "message": "Modifikator-Taste"
+  },
+  "shiftLabel": {
+    "message": "Umschalttaste"
+  },
+  "ctrlLabel": {
+    "message": "Strg"
+  },
+  "altLabel": {
+    "message": "Alt"
+  },
+  "cmdLabel": {
+    "message": "Command"
+  },
+  "toolbarLabel": {
+    "message": "Werkzeugleistenfenster"
+  },
+  "ifChangeSecondLangLabel": {
+    "message": "Automatisch zur Zweitsprache wechseln"
+  },
+  "ifChangeSecondLangCaptionLabel": {
+    "message": "Erkennt die Sprache des eingegebenen Textes und übersetzt ihn in die Zweitsprache, falls der eingegebene Text bereits in der Standardzielsprache ist."
+  },
+  "secondTargetLangLabel": {
+    "message": "Zweitsprache"
+  },
+  "secondTargetLangCaptionLabel": {
+    "message": "Zweitsprache wählen."
+  },
+  "waitTimeLabel": {
+    "message": "Wartezeit bis zur Übersetzung"
+  },
+  "waitTimeCaptionLabel": {
+    "message": "Geben Sie die Wartezeit von der Eingabe eines Zeichens bis zum Beginn der Übersetzung an. (Millisekunde)"
+  },
+  "waitTime2CaptionLabel": {
+    "message": "Wenn Sie es in kurzer Zeit mehrmals übersetzen, kann es für eine Weile unbrauchbar werden."
+  },
+  "menuLabel": {
+    "message": "Kontextmenü"
+  },
+  "ifShowMenuLabel": {
+    "message": "Kontextmenü anzeigen"
+  },
+  "ifShowMenuCaptionLabel": {
+    "message": "Fügen Sie Elemente zu dem Kontextmenü hinzu, das beim Rechtsklick auf die Webseite oder dem Tab angezeigt wird."
+  },
+  "pageTranslationLabel": {
+    "message": "Seitenübersetzung"
+  },
+  "pageTranslationOpenToLabel": {
+    "message": "Drücke die Tab-Taste, um die Übersetzungsergebnisse anzuzeigen"
+  },
+  "pageTranslationOpenToCaptionLabel": {
+    "message": "Bitte gib an, welcher Tab die Ergebnisse der Seitenübersetzung anzeigen soll."
+  },
+  "newTabLabel": {
+    "message": "Neuer Tab"
+  },
+  "currentTabLabel": {
+    "message": "Aktueller Tab"
+  },
+  "styleLabel": {
+    "message": "Erscheinungsbild"
+  },
+  "themeLabel": {
+    "message": "Theme"
+  },
+  "themeCaptionLabel": {
+    "message": "Farbschema festlegen."
+  },
+  "lightLabel": {
+    "message": "Hell"
+  },
+  "darkLabel": {
+    "message": "Dunkel"
+  },
+  "systemLabel": {
+    "message": "System"
+  },
+  "buttonStyleLabel": {
+    "message": "Übersetzen-Knopf"
+  },
+  "buttonStyleCaptionLabel": {
+    "message": "Erscheinungsbild des Übersetzen-Knopfes anpassen, der auf den Internetseiten angezeigt wird."
+  },
+  "buttonSizeLabel": {
+    "message": "Größe"
+  },
+  "buttonPositionLabel": {
+    "message": "Anzeigeposition"
+  },
+  "topRightLabel": {
+    "message": "Oben rechts"
+  },
+  "bottomRightLabel": {
+    "message": "Unten rechts"
+  },
+  "topLeftLabel": {
+    "message": "Oben links"
+  },
+  "bottomLeftLabel": {
+    "message": "Unten links"
+  },
+  "topLabel": {
+    "message": "Oben"
+  },
+  "bottomLabel": {
+    "message": "Unten"
+  },
+  "leftLabel": {
+    "message": "Links"
+  },
+  "rightLabel": {
+    "message": "Rechts"
+  },
+  "positionOffsetLabel": {
+    "message": "Anzeigeposition - Versatz"
+  },
+  "panelStyleLabel": {
+    "message": "Übersetzungsfeld"
+  },
+  "panelStyleCaptionLabel": {
+    "message": "Konfiguriere das Layout des Werkzeugleistenfensters, das auf Webseiten angezeigt wird."
+  },
+  "widthLabel": {
+    "message": "Breite"
+  },
+  "heightLabel": {
+    "message": "Höhe"
+  },
+  "fontSizeLabel": {
+    "message": "Schriftgröße"
+  },
+  "referencePointLabel": {
+    "message": "Anzeigeposition - Orientierungspunkt"
+  },
+  "bottomSelectedTextLabel": {
+    "message": "Unterer Teil des ausgewählten Textes"
+  },
+  "topSelectedTextLabel": {
+    "message": "Oberer Teil des ausgewählten Textes"
+  },
+  "clickedPointLabel": {
+    "message": "Angeklickter Punkt"
+  },
+  "displayDirectionLabel": {
+    "message": "Anzeigeposition - Richtung"
+  },
+  "resultFontColorLabel": {
+    "message": "Schriftfarbe des Übersetzungsergebnisses"
+  },
+  "isOverrideColorsLabel": {
+    "message": "Überschreibe Standardfarben mit den untenstehenden Farben"
+  },
+  "candidateFontColorLabel": {
+    "message": "Schriftfarbe der Übersetzungskandidaten"
+  },
+  "bgColorLabel": {
+    "message": "Hintergrundfarbe"
+  },
+  "otherLabel": {
+    "message": "Andere"
+  },
+  "isShowOptionsPageWhenUpdatedLabel": {
+    "message": "Öffne die Einstellungen bei Aktualisierungen"
+  },
+  "isShowOptionsPageWhenUpdatedCaptionLabel": {
+    "message": "Zeigt die Einstellugen an, wenn CDQ Browser Toolkit aktualisiert wird. Sie können den Inhalt des Updates schnell erkennen."
+  },
+  "isDebugModeLabel": {
+    "message": "Debugs-Modus aktivieren"
+  },
+  "isDebugModeCaptionLabel": {
+    "message": "Wenn der Debug-Modus aktiviert ist, wird das Protokoll an den Debugger ausgegeben."
+  },
+  "typeLetterMessage": {
+    "message": "Geben Sie einen Buchstaben ein"
+  },
+  "includeModifierKeysMessage": {
+    "message": "Binden Sie entweder Strg oder Alt ein"
+  },
+  "includeMacModifierKeysMessage": {
+    "message": "Binden Sie entweder Befehl, Strg oder Alt ein"
+  },
+  "invalidLetterMessage": {
+    "message": "Dieser Buchstabe kann nicht verwendet werden"
+  },
+  "clear": {
+    "message": "Löschen"
+  },
+  "reset": {
+    "message": "Zurücksetzen"
+  },
+  "informationLabel": {
+    "message": "Information"
+  },
+  "additionalPermissionLabel": {
+    "message": "Übersetzung auf Webseiten aktivieren"
+  },
+  "additionalPermissionCaptionLabel": {
+    "message": "Zusätzliche Berechtigungen werden benötigt, um CDQ Browser Toolkit auf Webseiten zu verwenden."
+  },
+  "enableLabel": {
+    "message": "Aktivieren"
+  },
+  "backersLabel": {
+    "message": "Unterstützer"
+  },
+  "licenseLabel": {
+    "message": "Lizenz"
+  },
+  "donationLabel": {
+    "message": "Bitte spende"
+  },
+  "donationCaptionLabel": {
+    "message": "Danke für das Benutzen von CDQ Browser Toolkit.<br>Deine Unterstützung wird ein großer Ansporn bei der Weiterentwicklung dieses Add-ons sein.<br>Wenn du CDQ Browser Toolkit magst, wäre es schön, wenn du etwas spenden würdest."
+  },
+  "amazonTitleLabel": {
+    "message": "amazon.co.jp eGeschenkekarten"
+  },
+  "sponsorsLabel": {
+    "message": "Sponsoren"
+  },
+  "addonPageLabel": {
+    "message": "Add-on-Seite"
+  },
+  "extensionPageLabel": {
+    "message": "Erweiterungs Seite"
+  },
+  "privacyPolicyLabel": {
+    "message": "Datenschutzrichtlinien"
+  },
+  "amazonUrl": {
+    "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
+  },
+  "addonUrl": {
+    "message": "https://addons.mozilla.org/de/firefox/addon/cdq-browser-toolkit/?src=optionpage"
+  },
+  "invalidApiKeyError": {
+    "message": "Fehler: Der API-Schlüssel ist ungültig."
+  },
+  "networkError": {
+    "message": "Fehler: Überprüfen Sie den Netzwerkstatus."
+  },
+  "unavailableError": {
+    "message": "Fehler: Service-Nutzungslimit erreicht. Bitte warten Sie einen Moment und versuchen Sie es erneut."
+  },
+  "deeplAuthError": {
+    "message": "Fehler: Authentifizierung der DeepL-API fehlgeschlagen. Bitte erstellen Sie den Authentifizierungsschlüssel korrekt auf der Einstellungsseite."
+  },
+  "unknownError": {
+    "message": "Fehler: Unbekannter Fehler"
+  },
+  "translatePageMenu": {
+    "message": "Diese Seite übersetzen"
+  },
+  "translateTextMenu": {
+    "message": "Ausgewählten Text übersetzen"
+  },
+  "translateLinkMenu": {
+    "message": "Ausgewählten Link übersetzen"
+  },
+  "openPopupDescription": {
+    "message": "Toolbar-Popup öffnen"
+  },
+
+  "openCloudApps": {
+    "message": "Öffne Apps in neuem Tab"
+  },
+  "businessPartnerLookup": {
+    "message": "Geschäftspartner suchen"
+  },
+  "bankAccountNameLookup": {
+    "message": "Bankkontoname suchen"
+  },
+  "emailVerify": {
+    "message": "E-Mail-Überprüfung"
+  },
+
+  "swiftCodeLabel": {
+    "message": "SWIFT-Code"
+  },
+  "countryCodeLabel": {
+    "message": "Ländercode"
+  },
+  "matchingScoreLabel": {
+    "message": "Übereinstimmungswert"
+  },
+
+  "pleaseWait": {
+    "message": "Bitte warten..."
+  }
+
+}

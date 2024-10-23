@@ -1,0 +1,53 @@
+.sideBar {
+  position: fixed;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: end;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  flex-shrink: 0;
+
+  .titleContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+
+    .logo {
+      height: 64px;
+      width: 64px;
+      margin-inline-end: 5px;
+    }
+    .logoTitle {
+      text-align: start;
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--cdq-browser-toolkit-sub-text);
+      margin: auto;
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+
+    .sideBarItem {
+      list-style-type: none;
+      padding: 0.8rem 1rem;
+
+      :hover {
+        text-decoration-line: underline;
+        color: var(--cdq-browser-toolkit-highlight);
+      }
+
+      a {
+        color: var(--cdq-browser-toolkit-sub-text);
+        text-decoration-line: none;
+      }
+
+      &.selected a {
+        color: var(--cdq-browser-toolkit-highlight);
+      }
+    }
+  }
+}

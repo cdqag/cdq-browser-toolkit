@@ -1,0 +1,390 @@
+{
+  "extName": {
+    "message": "CDQ Browser Toolkit"
+  },
+  "extDescription": {
+    "message": "Pakiet narzędzi do szybkiego używania produktów CDQ"
+  },
+  "donateWithPaypalLabel": {
+    "message": "Wspieraj przez PayPal"
+  },
+  "donateLabel": {
+    "message": "Wesprzyj"
+  },
+  "enableOnThisPage": {
+    "message": "Włącz tłumaczenie dla tej strony"
+  },
+  "disableOnThisPage": {
+    "message": "Wyłącz tłumaczenie dla tej strony"
+  },
+  "initialTextArea": {
+    "message": "Wprowadź tekst"
+  },
+  "showLink": {
+    "message": "Przetłumacz tę stronę"
+  },
+  "openInGoogleLabel": {
+    "message": "Otwórz w Tłumaczu Google"
+  },
+  "openInDeeplLabel": {
+    "message": "Otwórz w tłumaczu DeepL"
+  },
+  "copyLabel": {
+    "message": "Skopiuj"
+  },
+  "copiedLabel": {
+    "message": "Skopiowane"
+  },
+  "listenLabel": {
+    "message": "Słuchaj"
+  },
+  "targetLangLabel": {
+    "message": "Język docelowy"
+  },
+  "allLangLabel": {
+    "message": "Wszystkie języki"
+  },
+  "recentLangLabel": {
+    "message": "Najnowsze języki"
+  },
+  "settingsLabel": {
+    "message": "Ustawienia"
+  },
+  "generalLabel": {
+    "message": "Główne"
+  },
+  "apiKeyLabel": {
+    "message": "Klucz API"
+  },
+  "apiKeyCaptionLabel": {
+    "message": "Wprowadź swój klucz API"
+  },
+  "webPageLabel": {
+    "message": "Strona internetowa"
+  },
+  "ifShowCandidateLabel": {
+    "message": "Pokaż kandydatów do tłumaczenia"
+  },
+  "ifShowCandidateCaptionLabel": {
+    "message": "Pokaż wiele kandydatów do tłumaczenia kiedy słowo zostanie przetłumaczone."
+  },
+  "whenSelectTextLabel": {
+    "message": "Zachowanie podczas zaznaczania tekstu"
+  },
+  "ifAutoTranslateLabel": {
+    "message": "Wyświetl panel tłumaczenia"
+  },
+  "ifAutoTranslateCaptionLabel": {
+    "message": "Wyświetlaj panel tłumaczenia bez wyświetlania przycisku."
+  },
+  "ifCheckLangLabel": {
+    "message": "Nie wyświetlaj przycisku tłumaczenia, jeżeli jest nie potrzebny"
+  },
+  "ifCheckLangCaptionLabel": {
+    "message": "Wykrywa język zaznaczonego tekstu i jeżeli jest taki sam jak język docelowy przycisk nie zostaje wyświetlany."
+  },
+  "ifChangeSecondLangOnPageCaptionLabel": {
+    "message": "Wykrywa język wprowadzonego tekstu, a jeśli jest taki sam jak domyślny język docelowy, tłumaczy go na drugi język."
+  },
+  "ifOnlyTranslateWhenModifierKeyPressedLabel": {
+    "message": "Przetłumacz po naciśnięciu przycisku modyfikującego"
+  },
+  "ifOnlyTranslateWhenModifierKeyPressedCaptionLabel": {
+    "message": "Wyświetlaj tłumaczenie tylko po naciśnięciu określonego klawisza modyfikującego."
+  },
+  "modifierKeyLabel": {
+    "message": "Klawisz Modyfikacji"
+  },
+  "shiftLabel": {
+    "message": "Shift"
+  },
+  "ctrlLabel": {
+    "message": "Ctrl"
+  },
+  "altLabel": {
+    "message": "Alt"
+  },
+  "cmdLabel": {
+    "message": "Command"
+  },
+  "toolbarLabel": {
+    "message": "Okienko z paska narzędziowego"
+  },
+  "ifChangeSecondLangLabel": {
+    "message": "Automatycznie przełącz na drugi język"
+  },
+  "ifChangeSecondLangCaptionLabel": {
+    "message": "Wykrywa język wprowadzonego tekstu, jeżeli ten jest taki sam jak domyślny język docelowy, tłumaczy go na drugi język."
+  },
+  "secondTargetLangLabel": {
+    "message": "Drugi język"
+  },
+  "secondTargetLangCaptionLabel": {
+    "message": "Wybierz drugi język docelowy."
+  },
+  "waitTimeLabel": {
+    "message": "Czas oczekiwania na tłumaczenie"
+  },
+  "waitTimeCaptionLabel": {
+    "message": "Określ czas oczekiwania od wprowadzenia znaku do startu tłumaczenia. (milisekundy)"
+  },
+  "waitTime2CaptionLabel": {
+    "message": "Jeśli tłumaczysz to wiele razy w krótkim czasie, to może to przestać działać przez pewien czas."
+  },
+  "menuLabel": {
+    "message": "Menu kontekstowe"
+  },
+  "ifShowMenuLabel": {
+    "message": "Wyświetlaj menu kontekstowe"
+  },
+  "ifShowMenuCaptionLabel": {
+    "message": "Dodaj elementy do menu kontekstowego wyświetlanego, po kliknięciu prawym przyciskiem myszy na stronie internetowej."
+  },
+  "pageTranslationLabel": {
+    "message": "Tłumaczenie strony"
+  },
+  "pageTranslationOpenToLabel": {
+    "message": "Karta do wyświetlenia rezultatów tłumaczenia"
+  },
+  "pageTranslationOpenToCaptionLabel": {
+    "message": "Wybierz kartę do wyświetlania wyników tłumaczenia strony."
+  },
+  "newTabLabel": {
+    "message": "Nowa karta"
+  },
+  "currentTabLabel": {
+    "message": "Obecna karta"
+  },
+  "styleLabel": {
+    "message": "Styl"
+  },
+  "themeLabel": {
+    "message": "Motyw"
+  },
+  "themeCaptionLabel": {
+    "message": "Określ schemat kolorów."
+  },
+  "lightLabel": {
+    "message": "Jasny"
+  },
+  "darkLabel": {
+    "message": "Ciemny"
+  },
+  "systemLabel": {
+    "message": "Systemowy"
+  },
+  "buttonStyleLabel": {
+    "message": "Przycisk translacji"
+  },
+  "buttonStyleCaptionLabel": {
+    "message": "Określ styl przycisku translacji wyświetlanego na stronie internetowej."
+  },
+  "buttonSizeLabel": {
+    "message": "Rozmiar"
+  },
+  "buttonPositionLabel": {
+    "message": "Wyświetl pozycję"
+  },
+  "topRightLabel": {
+    "message": "Prawy górny"
+  },
+  "bottomRightLabel": {
+    "message": "Prawy dolny"
+  },
+  "topLeftLabel": {
+    "message": "Lewy górny"
+  },
+  "bottomLeftLabel": {
+    "message": "Lewy dolny"
+  },
+  "topLabel": {
+    "message": "Góra"
+  },
+  "bottomLabel": {
+    "message": "Dół"
+  },
+  "leftLabel": {
+    "message": "Lewo"
+  },
+  "rightLabel": {
+    "message": "Prawo"
+  },
+  "positionOffsetLabel": {
+    "message": "Miejsce wyświetlania - Przesunięcie"
+  },
+  "panelStyleLabel": {
+    "message": "Panel translacji"
+  },
+  "panelStyleCaptionLabel": {
+    "message": "Określ styl panelu translacji wyświetlanego na stronie internetowej."
+  },
+  "widthLabel": {
+    "message": "Szerokość"
+  },
+  "heightLabel": {
+    "message": "Wysokość"
+  },
+  "fontSizeLabel": {
+    "message": "Rozmiar czcionki"
+  },
+  "referencePointLabel": {
+    "message": "Miejsce wyświetlania - Punkt odniesienia"
+  },
+  "bottomSelectedTextLabel": {
+    "message": "Dół zaznaczonego tekstu"
+  },
+  "topSelectedTextLabel": {
+    "message": "Góra zaznaczonego tekstu"
+  },
+  "clickedPointLabel": {
+    "message": "Wciśnięty punkt"
+  },
+  "displayDirectionLabel": {
+    "message": "Miejsce wyświetlania - Kierunek"
+  },
+  "resultFontColorLabel": {
+    "message": "Kolor czcionki wyniku tłumaczenia"
+  },
+  "isOverrideColorsLabel": {
+    "message": "Nadpisz kolory domyślne wybranymi kolorami poniżej"
+  },
+  "candidateFontColorLabel": {
+    "message": "Kolor czcionki kandydatów do tłumaczenia"
+  },
+  "bgColorLabel": {
+    "message": "Kolor tła"
+  },
+  "otherLabel": {
+    "message": "Inne"
+  },
+  "isShowOptionsPageWhenUpdatedLabel": {
+    "message": "Wyświetl stronę opcji podczas aktualizacji"
+  },
+  "isShowOptionsPageWhenUpdatedCaptionLabel": {
+    "message": "Wyświetl opcje kiedy CDQ Browser Toolkit zostanie zaktualizowane. Możesz szybko poznać zawartość aktualizacji."
+  },
+  "isDebugModeLabel": {
+    "message": "Włącz tryb debugowania"
+  },
+  "isDebugModeCaptionLabel": {
+    "message": "Gdy tryb debugowania jest włączony, logi są przesyłane do debuggera."
+  },
+  "typeLetterMessage": {
+    "message": "Wpisz literę"
+  },
+  "includeModifierKeysMessage": {
+    "message": "Skorzystaj z klawiszy Ctrl lub Alt"
+  },
+  "includeMacModifierKeysMessage": {
+    "message": "Skorzystaj z klawiszy Command, Ctrl lub Alt"
+  },
+  "invalidLetterMessage": {
+    "message": "Nie można użyć tej litery"
+  },
+  "clear": {
+    "message": "Wyczyść"
+  },
+  "reset": {
+    "message": "Zresetuj"
+  },
+  "informationLabel": {
+    "message": "Informacje"
+  },
+  "additionalPermissionLabel": {
+    "message": "Włącz tłumaczenie na stronach internetowych"
+  },
+  "additionalPermissionCaptionLabel": {
+    "message": "Dodatkowe uprawnienia są wymagane do używania prostego tłumaczenia na stronach internetowych."
+  },
+  "enableLabel": {
+    "message": "Włącz"
+  },
+  "backersLabel": {
+    "message": "Wspierający"
+  },
+  "licenseLabel": {
+    "message": "Licencja"
+  },
+  "donationLabel": {
+    "message": "Proszę o dokonanie dotacji"
+  },
+  "donationCaptionLabel": {
+    "message": "Dziękuję za korzystanie z CDQ Browser Toolkit.<br> Twoje wsparcie będzie olbrzymią zachętą dla mnie do dalszej pracy nad tym rozszerzeniem.<br>Jeżeli lubisz CDQ Browser Toolkit, byłbym wdzięczny za rozważenie dokonania donacji."
+  },
+  "amazonTitleLabel": {
+    "message": "Karty podarunkowe amazon.co.jp"
+  },
+  "sponsorsLabel": {
+    "message": "Sponsorzy"
+  },
+  "addonPageLabel": {
+    "message": "Strona dodatków"
+  },
+  "extensionPageLabel": {
+    "message": "Strona rozszerzenia"
+  },
+  "privacyPolicyLabel": {
+    "message": "Polityka prywatności"
+  },
+  "amazonUrl": {
+    "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
+  },
+  "addonUrl": {
+    "message": "https://addons.mozilla.org/pl/firefox/addon/cdq-browser-toolkit/"
+  },
+  "invalidApiKeyError": {
+    "message": "Błąd: Niepoprawny klucz API."
+  },
+  "networkError": {
+    "message": "Błąd: Sprawdź stan połączenia sieciowego."
+  },
+  "unavailableError": {
+    "message": "Błąd: Limit użycia serwisu został osiągnięty. Poczekaj chwilę i spróbuj ponownie."
+  },
+  "deeplAuthError": {
+    "message": "Błąd: Uwierzytelnianie API DeepL nie powiodło się. Proszę ustawić klucz uwierzytelniania i zaplanować poprawnie na stronie ustawień."
+  },
+  "unknownError": {
+    "message": "Błąd: Nieznany błąd"
+  },
+  "translatePageMenu": {
+    "message": "Przetłumacz tę stronę"
+  },
+  "translateTextMenu": {
+    "message": "Przetłumacz zaznaczony tekst"
+  },
+  "translateLinkMenu": {
+    "message": "Przetłumacz wybrany link"
+  },
+  "openPopupDescription": {
+    "message": "Otwórz okienko paska narzędzi"
+  },
+
+  "openCloudApps": {
+    "message": "Otwórz aplikację w nowym oknie"
+  },
+  "businessPartnerLookup": {
+    "message": "Znajdź partnera biznesowego"
+  },
+  "bankAccountNameLookup": {
+    "message": "Znajdź bank po nazwie"
+  },
+  "emailVerify": {
+    "message": "Zweryfikuj adres e-mail"
+  },
+
+  "swiftCodeLabel": {
+    "message": "Kod SWIFT"
+  },
+  "countryCodeLabel": {
+    "message": "Kod kraju"
+  },
+  "matchingScoreLabel": {
+    "message": "Ocena dopasowania"
+  },
+
+  "pleaseWait": {
+    "message": "Proszę czekać..."
+  }
+
+}

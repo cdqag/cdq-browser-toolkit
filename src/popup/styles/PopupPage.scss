@@ -1,0 +1,33 @@
+@import "/src/common/styles/colors.scss";
+@import "/src/common/styles/typography.scss";
+
+@include inject-colors();
+
+html {
+  scrollbar-width: none;
+}
+
+body {
+  margin: 0;
+  @include font-family();
+  font-size: 13px;
+  overflow: hidden;
+  width: 100%;
+  min-width: 348px;
+  background-color: var(--cdq-browser-toolkit-main-bg);
+
+  #root {
+    height: 100%;
+  }
+
+  hr {
+    border: none;
+    border-top: solid 1px var(--cdq-browser-toolkit-button);
+    height: 1px;
+    margin: 0px 10px;
+  }
+
+  ::-moz-selection {
+    background: var(--cdq-browser-toolkit-line);
+  }
+}

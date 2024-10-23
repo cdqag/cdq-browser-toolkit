@@ -1,0 +1,390 @@
+{
+  "extName": {
+    "message": "CDQ Browser Toolkit"
+  },
+  "extDescription": {
+    "message": "Toolkit that allows to quickly use CDQ services."
+  },
+  "donateWithPaypalLabel": {
+    "message": "Donate with PayPal"
+  },
+  "donateLabel": {
+    "message": "Donate"
+  },
+  "enableOnThisPage": {
+    "message": "Enable translation on this page"
+  },
+  "disableOnThisPage": {
+    "message": "Disable translation on this page"
+  },
+  "initialTextArea": {
+    "message": "Enter text"
+  },
+  "showLink": {
+    "message": "Translate this page"
+  },
+  "openInGoogleLabel": {
+    "message": "Open in Google Translate"
+  },
+  "openInDeeplLabel": {
+    "message": "Open in DeepL Translator"
+  },
+  "copyLabel": {
+    "message": "Copy"
+  },
+  "copiedLabel": {
+    "message": "Copied."
+  },
+  "listenLabel": {
+    "message": "Listen"
+  },
+  "targetLangLabel": {
+    "message": "Target language"
+  },
+  "allLangLabel": {
+    "message": "All languages"
+  },
+  "recentLangLabel": {
+    "message": "Recent languages"
+  },
+  "settingsLabel": {
+    "message": "Settings"
+  },
+  "generalLabel": {
+    "message": "General"
+  },
+  "apiKeyLabel": {
+    "message": "API Key"
+  },
+  "apiKeyCaptionLabel": {
+    "message": "Enter your API Key"
+  },
+  "webPageLabel": {
+    "message": "Web page"
+  },
+  "ifShowCandidateLabel": {
+    "message": "Show translation candidates"
+  },
+  "ifShowCandidateCaptionLabel": {
+    "message": "Show multiple translation candidates when a single word is translated."
+  },
+  "whenSelectTextLabel": {
+    "message": "Behavior when selecting text"
+  },
+  "ifAutoTranslateLabel": {
+    "message": "Display translation panel"
+  },
+  "ifAutoTranslateCaptionLabel": {
+    "message": "Directly display the translation panel without displaying the button."
+  },
+  "ifCheckLangLabel": {
+    "message": "Do not display the button if translation is not required"
+  },
+  "ifCheckLangCaptionLabel": {
+    "message": "Detects the language of the selected text, and if it is the same as the target language, the button is not displayed."
+  },
+  "ifChangeSecondLangOnPageCaptionLabel": {
+    "message": "Detects the language of the selected text, and if it is the same as the default target language, translate it into the second language."
+  },
+  "ifOnlyTranslateWhenModifierKeyPressedLabel": {
+    "message": "Translate on modifier key pressed"
+  },
+  "ifOnlyTranslateWhenModifierKeyPressedCaptionLabel": {
+    "message": "Only display translation on specified modifier key pressed."
+  },
+  "modifierKeyLabel": {
+    "message": "Modifier Key"
+  },
+  "shiftLabel": {
+    "message": "Shift"
+  },
+  "ctrlLabel": {
+    "message": "Ctrl"
+  },
+  "altLabel": {
+    "message": "Alt"
+  },
+  "cmdLabel": {
+    "message": "Command"
+  },
+  "toolbarLabel": {
+    "message": "Toolbar popup"
+  },
+  "ifChangeSecondLangLabel": {
+    "message": "Automatically switch to the second language"
+  },
+  "ifChangeSecondLangCaptionLabel": {
+    "message": "Detects the language of the input text, and if it is the same as the default target language, translate it into the second language."
+  },
+  "secondTargetLangLabel": {
+    "message": "Second language"
+  },
+  "secondTargetLangCaptionLabel": {
+    "message": "Select the second target language."
+  },
+  "waitTimeLabel": {
+    "message": "Waiting time to translate"
+  },
+  "waitTimeCaptionLabel": {
+    "message": "Specify the waiting time from the input of a character to the start of translation. (millisecond)"
+  },
+  "waitTime2CaptionLabel": {
+    "message": "If you translate it many times in a short time, it may become unusable for a while."
+  },
+  "menuLabel": {
+    "message": "Context menu"
+  },
+  "ifShowMenuLabel": {
+    "message": "Display the context menu"
+  },
+  "ifShowMenuCaptionLabel": {
+    "message": "Add items to the context menu displayed when right clicking on the web page or the tab."
+  },
+  "pageTranslationLabel": {
+    "message": "Page translation"
+  },
+  "pageTranslationOpenToLabel": {
+    "message": "Tab to display translation results"
+  },
+  "pageTranslationOpenToCaptionLabel": {
+    "message": "Specify the tab to display the results of the page translation."
+  },
+  "newTabLabel": {
+    "message": "New tab"
+  },
+  "currentTabLabel": {
+    "message": "Current tab"
+  },
+  "styleLabel": {
+    "message": "Style"
+  },
+  "themeLabel": {
+    "message": "Theme"
+  },
+  "themeCaptionLabel": {
+    "message": "Specify the color scheme."
+  },
+  "lightLabel": {
+    "message": "Light"
+  },
+  "darkLabel": {
+    "message": "Dark"
+  },
+  "systemLabel": {
+    "message": "System"
+  },
+  "buttonStyleLabel": {
+    "message": "Translation button"
+  },
+  "buttonStyleCaptionLabel": {
+    "message": "Specify the style of the translation button displayed on the web page."
+  },
+  "buttonSizeLabel": {
+    "message": "Size"
+  },
+  "buttonPositionLabel": {
+    "message": "Display position"
+  },
+  "topRightLabel": {
+    "message": "Top right"
+  },
+  "bottomRightLabel": {
+    "message": "Bottom right"
+  },
+  "topLeftLabel": {
+    "message": "Top left"
+  },
+  "bottomLeftLabel": {
+    "message": "Bottom left"
+  },
+  "topLabel": {
+    "message": "Top"
+  },
+  "bottomLabel": {
+    "message": "Bottom"
+  },
+  "leftLabel": {
+    "message": "Left"
+  },
+  "rightLabel": {
+    "message": "Right"
+  },
+  "positionOffsetLabel": {
+    "message": "Display position - Offset"
+  },
+  "panelStyleLabel": {
+    "message": "Translation panel"
+  },
+  "panelStyleCaptionLabel": {
+    "message": "Specify the style of the translation panel displayed on the web page."
+  },
+  "widthLabel": {
+    "message": "Width"
+  },
+  "heightLabel": {
+    "message": "Height"
+  },
+  "fontSizeLabel": {
+    "message": "Font size"
+  },
+  "referencePointLabel": {
+    "message": "Display position - Reference point"
+  },
+  "bottomSelectedTextLabel": {
+    "message": "Bottom of selected text"
+  },
+  "topSelectedTextLabel": {
+    "message": "Top of selected text"
+  },
+  "clickedPointLabel": {
+    "message": "Clicked point"
+  },
+  "displayDirectionLabel": {
+    "message": "Display position - Direction"
+  },
+  "resultFontColorLabel": {
+    "message": "Font color of translation result"
+  },
+  "isOverrideColorsLabel": {
+    "message": "Override default colors with colors below"
+  },
+  "candidateFontColorLabel": {
+    "message": "Font color of translation candidates"
+  },
+  "bgColorLabel": {
+    "message": "Background color"
+  },
+  "otherLabel": {
+    "message": "Other"
+  },
+  "isShowOptionsPageWhenUpdatedLabel": {
+    "message": "Display option page when updating"
+  },
+  "isShowOptionsPageWhenUpdatedCaptionLabel": {
+    "message": "Display the options page when CDQ Browser Toolkit is updated. You can know the update contents quickly."
+  },
+  "isDebugModeLabel": {
+    "message": "Enable debug mode"
+  },
+  "isDebugModeCaptionLabel": {
+    "message": "When debug mode is enabled, the log is output to the debugger."
+  },
+  "typeLetterMessage": {
+    "message": "Type a letter"
+  },
+  "includeModifierKeysMessage": {
+    "message": "Include either Ctrl or Alt"
+  },
+  "includeMacModifierKeysMessage": {
+    "message": "Include either Command, Ctrl or Alt"
+  },
+  "invalidLetterMessage": {
+    "message": "The letter can not be used"
+  },
+  "clear": {
+    "message": "Clear"
+  },
+  "reset": {
+    "message": "Reset"
+  },
+  "informationLabel": {
+    "message": "Information"
+  },
+  "additionalPermissionLabel": {
+    "message": "Enable translation on web pages"
+  },
+  "additionalPermissionCaptionLabel": {
+    "message": "Additional permissions are required to use CDQ Browser Toolkit on web pages."
+  },
+  "enableLabel": {
+    "message": "Enable"
+  },
+  "backersLabel": {
+    "message": "Backers"
+  },
+  "licenseLabel": {
+    "message": "License"
+  },
+  "donationLabel": {
+    "message": "Please make a donation"
+  },
+  "donationCaptionLabel": {
+    "message": "Thank you for using CDQ Browser Toolkit.<br>Your support will be a big encouragement, as I continue to develop the add-on.<br>If you like CDQ Browser Toolkit, I would be pleased if you could consider donating."
+  },
+  "amazonTitleLabel": {
+    "message": "amazon.co.jp eGift Cards"
+  },
+  "sponsorsLabel": {
+    "message": "Sponsors"
+  },
+  "addonPageLabel": {
+    "message": "Add-on page"
+  },
+  "extensionPageLabel": {
+    "message": "Extension page"
+  },
+  "privacyPolicyLabel": {
+    "message": "Privacy policy"
+  },
+  "amazonUrl": {
+    "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
+  },
+  "addonUrl": {
+    "message": "https://addons.mozilla.org/en-US/firefox/addon/cdq-browser-toolkit/?src=optionpage"
+  },
+  "invalidApiKeyError": {
+    "message": "Error: Invalid API key."
+  },
+  "networkError": {
+    "message": "Error: Check network connection status."
+  },
+  "unavailableError": {
+    "message": "Error: Service usage limit reached. Please wait a while and try again."
+  },
+  "deeplAuthError": {
+    "message": "Error: Authentication of DeepL API failed. Please set the authentication key and plan correctly on the settings page."
+  },
+  "unknownError": {
+    "message": "Error: Unknown error"
+  },
+  "translatePageMenu": {
+    "message": "Translate this page"
+  },
+  "translateTextMenu": {
+    "message": "Translate selected text"
+  },
+  "translateLinkMenu": {
+    "message": "Translate selected link"
+  },
+  "openPopupDescription": {
+    "message": "Open toolbar popup"
+  },
+
+  "openCloudApps": {
+    "message": "Open Apps in new tab"
+  },
+  "businessPartnerLookup": {
+    "message": "Find business partner"
+  },
+  "bankAccountNameLookup": {
+    "message": "Find bank account name"
+  },
+  "emailVerify": {
+    "message": "Verify email"
+  },
+
+  "swiftCodeLabel": {
+    "message": "SWIFT Code"
+  },
+  "countryCodeLabel": {
+    "message": "Country Code"
+  },
+  "matchingScoreLabel": {
+    "message": "Matching Score"
+  },
+
+  "pleaseWait": {
+    "message": "Please wait..."
+  }
+
+}

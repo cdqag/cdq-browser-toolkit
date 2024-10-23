@@ -1,0 +1,25 @@
+.contentsArea {
+  margin-inline-start: 12rem;
+  width: 42rem;
+
+  .contentTitle {
+    font-size: 2rem;
+    font-weight: 200;
+    color: var(--cdq-browser-toolkit-sub-text);
+    line-height: 2;
+    margin: 0;
+  }
+
+  hr {
+    width: 100%;
+    background-color: var(--cdq-browser-toolkit-line);
+    height: 1px;
+    border: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+}

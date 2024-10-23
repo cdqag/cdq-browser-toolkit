@@ -1,0 +1,29 @@
+@import "/src/common/styles/colors.scss";
+@import "/src/common/styles/typography.scss";
+
+@include inject-colors();
+
+body {
+  background-color: var(--cdq-browser-toolkit-main-bg);
+  margin: 0;
+  padding: 0;
+}
+
+.optionsPage {
+  @include font-family();
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--cdq-browser-toolkit-main-text);
+  line-height: 1.5;
+  margin: 1rem 1rem 2rem;
+  &.rtl-language{
+    direction: rtl;
+  }
+}
+
+::-moz-selection {
+  background-color: var(--cdq-browser-toolkit-line);
+}
+::selection {
+  background-color: var(--cdq-browser-toolkit-line);
+}
