@@ -12,6 +12,18 @@ const ENDPOINT_EMAIL_VERIFY = "email-analysis/rest/emails/verify";
 const POST = "POST";
 // const GET = "GET";
 
+const EMAIL_VERIFY_SUMMARY_ITEMS = [
+  "isBreachedDomain",
+  "isBreachedEmail",
+  "isDisposable",
+  "isBlacklisted",
+  "isPublicWhois",
+  "isSharedEmail",
+  "isValidFormat",
+  "isFreemail",
+  "isRoleBased"
+];
+
 async function sendRequest(req) {
   const responseObject = {
     result: null,
@@ -131,6 +143,7 @@ export async function bankAccountNameLookup(text) {
 
     responseObject.result = result;
   }
+  // ---
 
   setHistory(ENDPOINT_BANKACCOUNT_LOOKUP, POST, text, responseObject);
   return responseObject;
@@ -151,10 +164,36 @@ export async function emailVerify(text) {
     "email": text
   });
 
-  // Post-processing results
-
-
   const responseObject = await sendRequest(req);
+
+  // Post-processing results
+  let result = responseObject.result;
+
+  const riskScoreClassification = result.risk.classification.technicalKey;
+  const riskScoreClassificationLabel = `riskScoreClassification_${riskScoreClassification}`;
+
+  const summary = [
+    {
+      label: browser.i18n.getMessage("riskScoreLabel"),
+      value: `${result.risk.score}% (${browser.i18n.getMessage(riskScoreClassificationLabel)})`,
+      className: `risk-classification-${riskScoreClassification}`
+    }
+  ];
+
+  EMAIL_VERIFY_SUMMARY_ITEMS.forEach(item => {
+    summary.push({
+      label: browser.i18n.getMessage(`${item}Label`),
+      value: result.summary[item] ? browser.i18n.getMessage("yes") : browser.i18n.getMessage("no"),
+      className: result.summary[item] ? "risk-marked-yes" : "risk-marked-no"
+    });
+  });
+
+  responseObject.result = {
+    title: result.email,
+    summary
+  };;
+  // ---
+
   setHistory(ENDPOINT_EMAIL_VERIFY, POST, text, responseObject);
   return responseObject;
 }

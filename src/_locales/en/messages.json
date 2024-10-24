@@ -389,8 +389,60 @@
     "message": "Matching Score"
   },
 
+  "riskScoreLabel": {
+    "message": "Risk Score"
+  },
+  "riskScoreClassification_VERY_LOW_RISK": {
+    "message": "Very low"
+  },
+  "riskScoreClassification_LOW_RISK": {
+    "message": "Low"
+  },
+  "riskScoreClassification_MEDIUM_RISK": {
+    "message": "Medium"
+  },
+  "riskScoreClassification_HIGH_RISK": {
+    "message": "High"
+  },
+  "riskScoreClassification_VERY_HIGH_RISK": {
+    "message": "Very high"
+  },
+  "isBreachedDomainLabel": {
+    "message": "Breached Domain"
+  },
+  "isBreachedEmailLabel": {
+    "message": "Breached Email"
+  },
+  "isDisposableLabel": {
+    "message": "Disposable"
+  },
+  "isBlacklistedLabel": {
+    "message": "Blacklisted"
+  },
+  "isPublicWhoisLabel": {
+    "message": "Public WHOIS"
+  },
+  "isSharedEmailLabel": {
+    "message": "Shared Email"
+  },
+  "isValidFormatLabel": {
+    "message": "Valid Format"
+  },
+  "isFreemailLabel": {
+    "message": "Freemail"
+  },
+  "isRoleBasedLabel": {
+    "message": "Role Based"
+  },
+
   "pleaseWait": {
     "message": "Please wait..."
+  },
+  "yes": {
+    "message": "Yes"
+  },
+  "no": {
+    "message": "No"
   }
 
 }

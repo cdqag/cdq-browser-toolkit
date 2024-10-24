@@ -389,8 +389,60 @@
     "message": "Übereinstimmungswert"
   },
 
+  "riskScoreLabel": {
+    "message": "Risikowert"
+  },
+  "riskScoreClassification_VERY_LOW_RISK": {
+    "message": "Sehr geringes"
+  },
+  "riskScoreClassification_LOW_RISK": {
+    "message": "Niedriges"
+  },
+  "riskScoreClassification_MEDIUM_RISK": {
+    "message": "Mittleres"
+  },
+  "riskScoreClassification_HIGH_RISK": {
+    "message": "Hohes"
+  },
+  "riskScoreClassification_VERY_HIGH_RISK": {
+    "message": "Sehr hohes"
+  },
+  "isBreachedDomainLabel": {
+    "message": "Gehackte Domain"
+  },
+  "isBreachedEmailLabel": {
+    "message": "Gehackte E-Mail"
+  },
+  "isDisposableLabel": {
+    "message": "Wegwerf-E-Mail"
+  },
+  "isBlacklistedLabel": {
+    "message": "Schwarze Liste"
+  },
+  "isPublicWhoisLabel": {
+    "message": "Öffentliche Whois"
+  },
+  "isSharedEmailLabel": {
+    "message": "Geteilte E-Mail"
+  },
+  "isValidFormatLabel": {
+    "message": "Gültiges Format"
+  },
+  "isFreemailLabel": {
+    "message": "Freemail"
+  },
+  "isRoleBasedLabel": {
+    "message": "Rollenbasiert"
+  },
+
   "pleaseWait": {
     "message": "Bitte warten..."
+  },
+  "yes": {
+    "message": "Ja"
+  },
+  "no": {
+    "message": "Nein"
   }
 
 }

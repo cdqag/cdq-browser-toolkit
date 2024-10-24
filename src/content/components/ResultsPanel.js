@@ -8,6 +8,8 @@ const PANEL_ID = "cdq-browser-toolkit-panel";
 const PANEL_MIN_WIDTH = 300;
 const PANEL_MIN_HEIGHT = 200;
 
+const WRAPPER_ID = "cdq-browser-toolkit-panel-wrapper";
+
 export default class ResultsPanel extends Component {
 
   constructor(props) {
@@ -25,8 +27,12 @@ export default class ResultsPanel extends Component {
     };
   }
 
-  getElem = () => {
+  getPanelEl = () => {
     return document.getElementById(PANEL_ID);
+  };
+
+  getWrapperEl = () => {
+    return document.getElementById(WRAPPER_ID);
   };
 
   calcBox = () => {
@@ -36,10 +42,9 @@ export default class ResultsPanel extends Component {
     const box = {
       x: refPos.x,
       y: refPos.y,
-      w: Math.max(this.getElem().offsetWidth, PANEL_MIN_WIDTH),
-      h: Math.max(this.getElem().offsetHeight, PANEL_MIN_HEIGHT)
+      w: Math.max(this.getWrapperEl().offsetWidth, PANEL_MIN_WIDTH),
+      h: Math.max(this.getWrapperEl().offsetHeight, PANEL_MIN_HEIGHT)
     }
-
 
     if (box.x + box.w > window.innerWidth) {
       box.x = window.innerWidth - box.w - offset;
@@ -100,7 +105,9 @@ export default class ResultsPanel extends Component {
       <div id={PANEL_ID}
         className={panelClassNames}
         style={panelStyles}>
-        {this.props.children}
+        <div id={WRAPPER_ID}>
+          {this.props.children}
+        </div>
       </div>
     );
   };

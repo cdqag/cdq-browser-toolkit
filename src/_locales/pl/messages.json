@@ -389,8 +389,60 @@
     "message": "Ocena dopasowania"
   },
 
+  "riskScoreLabel": {
+    "message": "Ocena ryzyka"
+  },
+  "riskScoreClassification_VERY_LOW_RISK": {
+    "message": "Bardzo niskie"
+  },
+  "riskScoreClassification_LOW_RISK": {
+    "message": "Niskie"
+  },
+  "riskScoreClassification_MEDIUM_RISK": {
+    "message": "Umiarkowane"
+  },
+  "riskScoreClassification_HIGH_RISK": {
+    "message": "Wysokie"
+  },
+  "riskScoreClassification_VERY_HIGH_RISK": {
+    "message": "Bardzo wysokie"
+  },
+  "isBreachedDomainLabel": {
+    "message": "Naruszony domena"
+  },
+  "isBreachedEmailLabel": {
+    "message": "Naruszony e-mail"
+  },
+  "isDisposableLabel": {
+    "message": "Jednorazowy"
+  },
+  "isBlacklistedLabel": {
+    "message": "Na czarnej liście"
+  },
+  "isPublicWhoisLabel": {
+    "message": "Publiczny Whois"
+  },
+  "isSharedEmailLabel": {
+    "message": "Współdzielony e-mail"
+  },
+  "isValidFormatLabel": {
+    "message": "Poprawny format"
+  },
+  "isFreemailLabel": {
+    "message": "Freemail"
+  },
+  "isRoleBasedLabel": {
+    "message": "Oparty na roli"
+  },
+
   "pleaseWait": {
     "message": "Proszę czekać..."
+  },
+  "yes": {
+    "message": "Tak"
+  },
+  "no": {
+    "message": "Nie"
   }
 
 }

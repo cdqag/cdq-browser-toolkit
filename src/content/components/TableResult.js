@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import classNames from "classnames";
 
 export default class TableResult extends Component {
 
@@ -18,9 +19,14 @@ export default class TableResult extends Component {
         <div className="cdq-browser-toolkit-h2">{title}</div>
         <div className="cdq-browser-toolkit-table">
           {summary.map(function (item, index) {
+            const valueClassName = classNames([
+              "cdq-browser-toolkit-table-cell-value",
+              item.className
+            ]);
+            
             return <div key={index} className="cdq-browser-toolkit-table-row">
               <div className="cdq-browser-toolkit-table-cell-label">{item.label}:</div>
-              <div className="cdq-browser-toolkit-table-cell-value">{item.value}</div>
+              <div className={valueClassName}>{item.value}</div>
             </div>
           })}
         </div>
