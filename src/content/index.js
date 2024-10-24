@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import browser from "webextension-polyfill";
 import { initSettings, handleSettingsChange  } from "src/settings";
 import { updateLogLevel, overWriteLogLevel  } from "src/common/log";
-import { waitTime  } from "src/common/utils";
+import { waitTime, dummyPromise } from "src/common/utils";
 import { getSelectedText, getSelectedPosition  } from './selection'
 import ResultsContainer from "./components/ResultsContainer";
 
@@ -64,30 +64,37 @@ const handleVisibilityChange = () => {
  * @returns 
  */
 const handleMessage = async request => {
-  const empty = new Promise(resolve => {
-    setTimeout(() => {
-      return resolve("");
-    }, 100);
-  });
 
+  // Handle control messages
   switch (request.message) {
   case "getTabUrl":
-    if (!isEnabled) {
-      return empty;
-    }
-    if (window == window.parent) {
+    if (isEnabled && window == window.parent) {
       return location.href;
-    } else {
-      return empty;
     }
+    return dummyPromise;
 
   case "getSelectedText":
-    if (!isEnabled) { return empty; }
-    if (prevSelectedText.length === 0) { return empty; }
-    else { return prevSelectedText; }
+    if (isEnabled && prevSelectedText.length > 0) {
+      return prevSelectedText;
+    }
+    return dummyPromise;
+
+  case "getEnabled":
+    return isEnabled;
+
+  case "enableExtension":
+    isEnabled = true;
+    return;
+
+  case "disableExtension":
+    removeResultsContainer();
+    isEnabled = false;
+    return
     
-  case "bankAccountNameLookupMenuItemClicked": {
-    if (!isEnabled) { return empty; }
+  }
+
+  if (request.message.endsWith("MenuItemClicked")) {
+    if (!isEnabled) { return dummyPromise; }
     const selectedText = getSelectedText();
     if (selectedText.length === 0) { return; }
     const position = getSelectedPosition();
@@ -95,30 +102,39 @@ const handleMessage = async request => {
     removeResultsContainer();
     showResultsContainer(position);
 
-    const responseObject = await browser.runtime.sendMessage({
-      message: "bankAccountNameLookupFetch",
-      text: selectedText,
-    });
+    let responseObject;
+
+    switch (request.message) {
+    case "bankAccountNameLookupMenuItemClicked": {
+      responseObject = await browser.runtime.sendMessage({
+        message: "bankAccountNameLookupFetch",
+        text: selectedText,
+      });
+      break;
+    }
+  
+    case "emailVerifyMenuItemClicked": {
+      responseObject = await browser.runtime.sendMessage({
+        message: "emailVerifyFetch",
+        text: selectedText,
+      });
+      break;
+    }
+
+    default: {
+      responseObject = {
+        result: null,
+        error: browser.i18n.getMessage("notImplementedError")
+      };
+      break;
+    }
+    }
+
     updateContent(responseObject);
-
-    break;
+    return;
   }
-    
-  case "getEnabled":
-    return isEnabled;
 
-  case "enableExtension":
-    isEnabled = true;
-    break;
-
-  case "disableExtension":
-    removeResultsContainer();
-    isEnabled = false;
-    break;
-
-  default:
-    return empty;
-  }
+  return dummyPromise;
 };
 
 

@@ -332,6 +332,9 @@
   "addonUrl": {
     "message": "https://addons.mozilla.org/en-US/firefox/addon/cdq-browser-toolkit/?src=optionpage"
   },
+  "emptyApiKeyError": {
+    "message": "Error: API key is empty. Please set the API key on the extension's settings page."
+  },
   "invalidApiKeyError": {
     "message": "Error: Invalid API key."
   },
@@ -346,6 +349,9 @@
   },
   "unknownError": {
     "message": "Error: Unknown error"
+  },
+  "notImplementedError": {
+    "message": "Error: Function not implemented."
   },
   "translatePageMenu": {
     "message": "Translate this page"

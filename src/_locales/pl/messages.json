@@ -332,6 +332,9 @@
   "addonUrl": {
     "message": "https://addons.mozilla.org/pl/firefox/addon/cdq-browser-toolkit/"
   },
+  "emptyApiKeyError": {
+    "message": "Błąd: Klucz API jest pusty. Uzupełnij go proszę w ustawieniach rozszerzenia."
+  },
   "invalidApiKeyError": {
     "message": "Błąd: Niepoprawny klucz API."
   },
@@ -346,6 +349,9 @@
   },
   "unknownError": {
     "message": "Błąd: Nieznany błąd"
+  },
+  "notImplementedError": {
+    "message": "Błąd: Funkcjonalność nie zaimplementowana."
   },
   "translatePageMenu": {
     "message": "Przetłumacz tę stronę"

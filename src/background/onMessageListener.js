@@ -7,11 +7,11 @@ export default async data => {
   
   switch (data.message) {
 
-  case "bankAccountNameLookupFetch": {    
+  case "bankAccountNameLookupFetch": {
     return await bankAccountNameLookup(data.text);
   }
 
-  case "emailVerify": {
+  case "emailVerifyFetch": {
     return await emailVerify(data.text);
   }
 

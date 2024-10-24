@@ -332,6 +332,9 @@
   "addonUrl": {
     "message": "https://addons.mozilla.org/de/firefox/addon/cdq-browser-toolkit/?src=optionpage"
   },
+  "emptyApiKeyError": {
+    "message": "Fehler: API-Schlüssel ist leer. Bitte legen Sie den API-Schlüssel auf der Einstellungsseite der Erweiterung fest."
+  },
   "invalidApiKeyError": {
     "message": "Fehler: Der API-Schlüssel ist ungültig."
   },
@@ -346,6 +349,9 @@
   },
   "unknownError": {
     "message": "Fehler: Unbekannter Fehler"
+  },
+  "notImplementedError": {
+    "message": "Fehler: Diese Funktion ist noch nicht implementiert."
   },
   "translatePageMenu": {
     "message": "Diese Seite übersetzen"

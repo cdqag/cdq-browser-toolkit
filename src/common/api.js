@@ -13,15 +13,20 @@ const POST = "POST";
 // const GET = "GET";
 
 async function sendRequest(req) {
-  const response = await fetch(req).catch(() => ({
-    status: 0,
-    statusText: '' 
-  }));
-
   const responseObject = {
     result: null,
     error: null
   };
+
+  if (getApiKey() === "") {
+    responseObject.error = browser.i18n.getMessage("emptyApiKeyError");
+    return responseObject;
+  }
+
+  const response = await fetch(req).catch(() => ({
+    status: 0,
+    statusText: '' 
+  }));
 
   if (response.status !== 200) {
     if (response.status === 0) {
@@ -41,10 +46,14 @@ async function sendRequest(req) {
   return responseObject;
 }
 
+function getApiKey() {
+  return getSettings("apiKey").trim();
+}
+
 function getHeaders() {
   return {
     "Content-Type": "application/json",
-    "X-API-KEY": getSettings("apiKey")
+    "X-API-KEY": getApiKey()
   };
 }
 
@@ -141,6 +150,9 @@ export async function emailVerify(text) {
   const req = createPOSTRequest(ENDPOINT_EMAIL_VERIFY, {
     "email": text
   });
+
+  // Post-processing results
+
 
   const responseObject = await sendRequest(req);
   setHistory(ENDPOINT_EMAIL_VERIFY, POST, text, responseObject);
