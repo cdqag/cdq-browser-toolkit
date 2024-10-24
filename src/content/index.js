@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import browser from "webextension-polyfill";
-import { initSettings, getSettings, handleSettingsChange  } from "src/settings";
+import { initSettings, handleSettingsChange  } from "src/settings";
 import { updateLogLevel, overWriteLogLevel  } from "src/common/log";
 import { waitTime  } from "src/common/utils";
 import { getSelectedText, getSelectedPosition  } from './selection'
@@ -137,9 +137,7 @@ const showResultsContainer = (position) => {
   if (!isEnabled) { return; }
   content.isLoading = true;
 
-  const themeClass = "cdq-browser-toolkit-main-theme";
-
-  document.body.insertAdjacentHTML("beforeend", `<div id="cdq-browser-toolkit" class="${themeClass}"></div>`);
+  document.body.insertAdjacentHTML("beforeend", `<div id="cdq-browser-toolkit"></div>`);
   renderResultsContainer(position);
 };
 

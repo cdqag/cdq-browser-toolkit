@@ -4,14 +4,14 @@ import { Link, withRouter  } from "react-router-dom";
 import "../styles/SideBar.scss";
 
 const SideBar = props => (
-  <div className="sideBar">
-    <div className="titleContainer">
+  <div className="side-bar">
+    <div className="title-container">
       <img src="/icons/64.png" className="logo" />
-      <span className="logoTitle">{browser.i18n.getMessage("extName")}</span>
+      <span className="logo-caption">{browser.i18n.getMessage("extName")}</span>
     </div>
     <ul>
       <li
-        className={`sideBarItem ${
+        className={`side-bar-item ${
           ["/information"].every(path => path != props.location.pathname)
             ? "selected"
             : ""
@@ -19,7 +19,7 @@ const SideBar = props => (
       >
         <Link to="/settings">{browser.i18n.getMessage("settingsLabel")}</Link>
       </li>
-      <li className={`sideBarItem ${props.location.pathname == "/information" ? "selected" : ""}`}>
+      <li className={`side-bar-item ${props.location.pathname == "/information" ? "selected" : ""}`}>
         <Link to="/information">{browser.i18n.getMessage("informationLabel")}</Link>
       </li>
     </ul>

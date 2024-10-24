@@ -10,7 +10,7 @@ html {
 body {
   margin: 0;
   @include font-family();
-  font-size: 13px;
+  font-size: 0.8rem;
   overflow: hidden;
   width: 100%;
   min-width: 348px;

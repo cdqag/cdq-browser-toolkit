@@ -5,7 +5,7 @@ import InformationPage from "./InformationPage";
 import "../styles/ContentsArea.scss";
 
 export default () => (
-  <div className="contentsArea">
+  <div className="contents-area">
     <Switch>
       <Route path="/settings" component={SettingsPage} />
       <Route path="/information" component={InformationPage} />

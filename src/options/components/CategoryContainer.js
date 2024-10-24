@@ -9,20 +9,20 @@ export default props => {
     } 
   } = props;
   return (
-    <li className="categoryContainer">
+    <li className="category-container">
       <fieldset>
         <legend>
-          <p className="categoryTitle">
+          <p className="category-title">
             {category !== "" ? browser.i18n.getMessage(category) : ""}
           </p>
         </legend>
-        <ul className="categoryElements">
+        <ul className="category-elements">
           {elements.map((option, index) => (
             <div key={index}>
               <OptionContainer {...option} currentValue={currentValues[option.id]}>
-                {option.hasOwnProperty("childElements") && (
-                  <ul className="childElements">
-                    {option.childElements.map((option, index) => (
+                {option.hasOwnProperty("child-elements") && (
+                  <ul className="child-elements">
+                    {option.child-elements.map((option, index) => (
                       <OptionContainer {...option} currentValue={currentValues[option.id]} key={index} />
                     ))}
                   </ul>

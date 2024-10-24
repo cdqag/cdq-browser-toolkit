@@ -1,28 +1,29 @@
-.sideBar {
+@import "/src/common/styles/typography.scss";
+
+.side-bar {
   position: fixed;
-  font-size: 1rem;
-  font-weight: 400;
+  @include font-main-text();
   text-align: end;
   -moz-user-select: none;
   -webkit-user-select: none;
   flex-shrink: 0;
 
-  .titleContainer {
+  .title-container {
     display: flex;
     flex-direction: column;
     padding: 1rem;
     align-items: center;
+    width: 9rem;
 
     .logo {
       height: 64px;
       width: 64px;
       margin-inline-end: 5px;
     }
-    .logoTitle {
+    
+    .logo-caption {
+      @include font-sub-text();
       text-align: start;
-      font-size: 1rem;
-      font-weight: 300;
-      color: var(--cdq-browser-toolkit-sub-text);
       margin: auto;
     }
   }
@@ -31,7 +32,7 @@
     padding: 0;
     margin: 0;
 
-    .sideBarItem {
+    .side-bar-item {
       list-style-type: none;
       padding: 0.8rem 1rem;
 

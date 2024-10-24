@@ -9,13 +9,12 @@ body {
   padding: 0;
 }
 
-.optionsPage {
+.option-page {
   @include font-family();
-  font-size: 1rem;
-  font-weight: 400;
-  color: var(--cdq-browser-toolkit-main-text);
+  @include font-main-text();  
   line-height: 1.5;
   margin: 1rem 1rem 2rem;
+  
   &.rtl-language{
     direction: rtl;
   }

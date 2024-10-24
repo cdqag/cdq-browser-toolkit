@@ -8,7 +8,7 @@ import "../styles/OptionsPage.scss";
 
 const UILanguage =  browser.i18n.getUILanguage()
 const rtlLanguage = ['he', 'ar'].includes(UILanguage)
-const optionsPageClassName = 'optionsPage' + (rtlLanguage ? ' rtl-language' : '')
+const optionsPageClassName = 'option-page' + (rtlLanguage ? ' rtl-language' : '')
 
 export default () => {
   return (

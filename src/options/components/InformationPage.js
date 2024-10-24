@@ -15,22 +15,11 @@ export default props => {
   const query = queryString.parse(props.location.search);
   const extensionVersion = manifest.version;
 
-  const [sponsorsHeihgt, setSponsorsHeight] = useState();
-
-  useEffect(() => {
-    const setHeight = e => {
-      if (e.data[0] !== "setSponsorsHeight") { return; }
-      setSponsorsHeight(e.data[1]);
-    };
-    window.addEventListener("message", setHeight);
-    return () => window.removeEventListener("message", setHeight);
-  });
-
   const [hasPermission, requestPermission] = useAdditionalPermission();
 
   return (
     <div>
-      <p className="contentTitle">{browser.i18n.getMessage("informationLabel")}</p>
+      <p className="content-title">{browser.i18n.getMessage("informationLabel")}</p>
       <hr />
       <OptionsContainer
         title={"extName"}
@@ -83,7 +72,7 @@ export default props => {
                   {browser.i18n.getMessage("addonPageLabel")}
                 </a>
               )}
-              <span>　</span>
+              <span>&nbsp;</span>
               <a href="https://github.com/cdqag/cdq-browser-extension" target="_blank" rel="noreferrer">
                 GitHub
               </a>

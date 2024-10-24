@@ -115,7 +115,7 @@ export default props => {
   case "select":
     formId = id;
     optionForm = (
-      <div className="selectWrap">
+      <div className="select-wrap">
         <select id={formId} onChange={handleValueChange} value={currentValue}>
           {(typeof props.options === 'function' ? props.options() : props.options).map((option, index) => (
             <option value={option.value} key={index}>
@@ -158,10 +158,10 @@ export default props => {
 
   return (
     shouldShow && (
-      <li className={`optionContainer ${props.updated ? "updated" : ""} ${props.new ? "new" : ""}`}>
+      <li className={`option-container ${props.updated ? "updated" : ""} ${props.new ? "new" : ""}`}>
         {props.hr && <hr />}
-        <div className={`optionElement ${type == "textarea" ? "showColumn" : ""}`}>
-          <div className="optionText">
+        <div className={`option-element ${type == "textarea" ? "show-column" : ""}`}>
+          <div className="option-text">
             <label className="noHover" htmlFor={formId ? formId : null}>
               <p>{title ? (props.useRawTitle ? title : browser.i18n.getMessage(title)) : ""}</p>
             </label>
@@ -176,7 +176,7 @@ export default props => {
             ))}
             {props.extraCaption ? props.extraCaption : ""}
           </div>
-          <div className="optionForm">{optionForm}</div>
+          <div className="option-form">{optionForm}</div>
         </div>
         {children && (
           <fieldset>

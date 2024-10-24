@@ -1,14 +1,14 @@
-.categoryContainer {
+@import "/src/common/styles/typography.scss";
+
+.category-container {
   list-style-type: none;
 
-  .categoryTitle {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--cdq-browser-toolkit-sub-text);
+  .category-title {
+    @include font-section-title();
     margin: 0;
   }
 
-  .categoryElements {
+  .category-elements {
     padding-inline-start: 1rem;
     margin-bottom: 1.5rem;
   }

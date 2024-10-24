@@ -1,30 +1,33 @@
-.optionContainer {
+@import "/src/common/styles/typography.scss";
+
+.option-container {
   list-style-type: none;
 
-  .optionElement {
+  .option-element {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 10px 0px 10px 0px;
 
-    &.showColumn {
+    &.show-column {
       flex-direction: column;
-      .optionForm {
+      .option-form {
         margin: 0px;
       }
     }
 
-    .optionText {
+    .option-text {
       flex: 1;
+
       p {
         margin: 0px;
       }
+
       .caption {
-        font-size: 13px;
-        font-weight: 400;
-        color: var(--cdq-browser-toolkit-sub-text);
+        @include font-sub-text();
         white-space: pre-wrap;
       }
+
       a {
         color: var(--cdq-browser-toolkit-highlight);
         text-decoration: none;
@@ -33,17 +36,20 @@
         }
       }
     }
-    .optionForm {
+
+    .option-form {
       display: flex;
       align-items: center;
       justify-content: flex-end;
       margin-inline-start: 10px;
     }
-    &.buttonsContainer {
+
+    &.buttons-container {
       justify-content: flex-start;
     }
   }
-  .childElements {
+  
+  .child-elements {
     padding-inline-start: 20px;
     border-inline-start: solid 10px var(--cdq-browser-toolkit-line);
   }
@@ -62,19 +68,19 @@ fieldset {
 }
 
 /*new, updated*/
-.new > .optionElement p:nth-child(1)::after,
-.updated > .optionElement p:nth-child(1)::after {
+.new > .option-element p:nth-child(1)::after,
+.updated > .option-element p:nth-child(1)::after {
   color: var(--cdq-browser-toolkit-attention);
-  font-size: 14px;
+  font-size: 0.75rem;
   border: 1px solid var(--cdq-browser-toolkit-attention);
   border-radius: 2px;
   padding: 0px 5px;
   margin-left: 5px;
 }
-.updated > .optionElement p:nth-child(1)::after {
+.updated > .option-element p:nth-child(1)::after {
   content: "Updated";
 }
-.new > .optionElement p:nth-child(1)::after {
+.new > .option-element p:nth-child(1)::after {
   content: "New";
 }
 
@@ -82,9 +88,8 @@ fieldset {
 input,
 textarea {
   font-family: inherit;
-  font-size: 14px;
+  @include font-textarea();
   background-color: var(--cdq-browser-toolkit-sub-bg);
-  color: var(--cdq-browser-toolkit-main-text);
 }
 
 textarea {
@@ -249,7 +254,7 @@ select {
   }
 }
 
-.selectWrap {
+.select-wrap {
   position: relative;
   &:before {
     pointer-events: none;
@@ -278,29 +283,30 @@ select {
 
 option {
   font-family: inherit;
-  font-size: 14px;
+  @include font-sub-text();
 }
 
 /*button*/
 
 input[type="button"],
 .button {
+  @include font-sub-text();
   min-width: 100px;
   text-align: center;
   padding: 5px;
   height: 30px;
-  font-size: 13px;
-  color: var(--cdq-browser-toolkit-main-text);
   border: 1px solid var(--cdq-browser-toolkit-button);
   border-radius: 2px;
   background-color: var(--cdq-browser-toolkit-line);
   cursor: pointer;
   white-space: nowrap;
+
   &:hover,
   &:focus {
     background-color: var(--cdq-browser-toolkit-button);
     border-color: var(--cdq-browser-toolkit-highlight);
   }
+
   &.includeSpan {
     padding: 0px;
     height: 30px;

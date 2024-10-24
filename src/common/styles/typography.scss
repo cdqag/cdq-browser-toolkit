@@ -7,3 +7,34 @@ $font-family: "Segoe UI", "San Francisco", "Ubuntu", "Fira Sans", "Roboto", "Ari
     font-family: $font-family;
   }
 }
+
+@mixin font-main-text() {
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--cdq-browser-toolkit-main-text);
+}
+
+@mixin font-sub-text() {
+  font-weight: 400;
+  font-size: 0.85rem;
+  color: var(--cdq-browser-toolkit-sub-text);
+}
+
+@mixin font-section-title() {
+  font-weight: 300;
+  font-size: 1rem;
+  color: var(--cdq-browser-toolkit-sub-text);
+}
+
+@mixin font-textarea() {
+  font-weight: 400;
+  font-size: 0.85rem;
+  color: var(--cdq-browser-toolkit-main-text);
+}
+
+@mixin font-h1() {
+  font-weight: 200;
+  font-size: 2rem;
+  color: var(--cdq-browser-toolkit-sub-text);
+  line-height: 2;
+}

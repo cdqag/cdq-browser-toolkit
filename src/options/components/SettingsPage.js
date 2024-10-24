@@ -47,7 +47,7 @@ export default class SettingsPage extends Component {
 
     return (
       <div>
-        <p className="contentTitle">{browser.i18n.getMessage("settingsLabel")}</p>
+        <p className="content-title">{browser.i18n.getMessage("settingsLabel")}</p>
         <hr />
         {isInit ? settingsContent : ""}
       </div>

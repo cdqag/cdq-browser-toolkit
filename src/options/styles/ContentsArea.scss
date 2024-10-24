@@ -1,12 +1,11 @@
-.contentsArea {
+@import "/src/common/styles/typography.scss";
+
+.contents-area {
   margin-inline-start: 12rem;
   width: 42rem;
 
-  .contentTitle {
-    font-size: 2rem;
-    font-weight: 200;
-    color: var(--cdq-browser-toolkit-sub-text);
-    line-height: 2;
+  .content-title {
+    @include font-h1();
     margin: 0;
   }
 

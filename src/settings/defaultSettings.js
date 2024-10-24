@@ -21,7 +21,7 @@ export default [
       //   captions: [],
       //   type: "none",
       //   default: "google",
-      //   childElements: [
+      //   child-elements: [
       //     {
       //       id: "translationApi",
       //       title: "googleApiLabel",
@@ -201,7 +201,7 @@ export default [
   //       title: "buttonStyleLabel",
   //       captions: ["buttonStyleCaptionLabel"],
   //       type: "none",
-  //       childElements: [
+  //       child-elements: [
   //         {
   //           id: "buttonSize",
   //           title: "buttonSizeLabel",
@@ -266,7 +266,7 @@ export default [
   //       title: "panelStyleLabel",
   //       captions: ["panelStyleCaptionLabel"],
   //       type: "none",
-  //       childElements: [
+  //       child-elements: [
 
   //         {
   //           id: "fontSize",
