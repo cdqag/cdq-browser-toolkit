@@ -1,13 +1,14 @@
 @import "/src/common/styles/typography.scss";
 
 #cdq-browser-toolkit {
-  .cdq-browser-toolkit-panel {
-    all: initial;
+  #cdq-browser-toolkit-panel {
+    width: 20rem;
+    height: 12rem;
     position: fixed;
     overflow: hidden;
     background-color: var(--cdq-browser-toolkit-main-bg);
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
-    border-radius: 3px;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
     z-index: 2147483646;
 
     transition-property: opacity, visibility;
@@ -26,7 +27,6 @@
     }
 
     .cdq-browser-toolkit-result-wrapper {
-      all: initial;
       position: absolute;
       font-size: inherit;
       visibility: inherit;
@@ -44,10 +44,8 @@
         padding: 0px 18px 15px;
         p,
         a {
-          all: initial;
           display: block;
           margin: 0;
-          @include font-family($important: true);
           word-wrap: break-word;
           font-size: inherit;
           line-height: 150%;
@@ -73,16 +71,6 @@
           margin-top: 1em;
           &:empty {
             margin-top: 0;
-          }
-        }
-
-        table {
-          tbody {
-            tr {
-              th, td {
-                text-align: left;
-              }
-            }
           }
         }
       }

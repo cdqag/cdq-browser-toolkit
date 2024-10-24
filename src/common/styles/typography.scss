@@ -38,3 +38,10 @@ $font-family: "Segoe UI", "San Francisco", "Ubuntu", "Fira Sans", "Roboto", "Ari
   color: var(--cdq-browser-toolkit-sub-text);
   line-height: 2;
 }
+
+@mixin font-h2() {
+  font-weight: 200;
+  font-size: 1.5rem;
+  color: var(--cdq-browser-toolkit-sub-text);
+  line-height: 2;
+}

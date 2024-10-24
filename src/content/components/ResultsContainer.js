@@ -1,19 +1,10 @@
 import React, { Component } from "react";
 import classNames from "classnames";
 import browser from "webextension-polyfill";
-// import { getSettings  } from "src/settings";
 import ResultsPanel from "./ResultsPanel";
+import ErrorResult from "./ErrorResult";
+import TableResult from "./TableResult";
 import "../styles/ResultsContainer.scss";
-
-// const translateText = async (text, targetLang = getSettings("targetLang")) => {
-//   const result = await browser.runtime.sendMessage({
-//     message: 'translate',
-//     text: text,
-//     sourceLang: 'auto',
-//     targetLang: targetLang,
-//   });
-//   return result;
-// };
 
 export default class ResultsContainer extends Component {
 
@@ -48,38 +39,19 @@ export default class ResultsContainer extends Component {
       content = "";
 
     } else if (error) {
-      const ers = error.split(": ", 2);
-      content = <div>
-        <h2>{ers[0]}</h2>
-        <p>{ers[1]}</p>
-      </div>;
+      content = <ErrorResult error={error} />;
       
     } else {
-      console.log(result);
-      content = <div>
-        <h2>{result.title}</h2>
-        <table>
-          <tbody>
-            {result.summary.map(function (item, index) {
-              return <tr key={index}>
-                <th>{item.label}:</th>
-                <td>{item.value}</td>
-              </tr>
-            })}
-          </tbody>
-        </table>
-      </div>;
+      content = <TableResult result={result} />;
     }
 
     return (
-      <div>
-        <ResultsPanel
-          className={panelClassNames}
-          style={style}
-          position={this.state.position}>
-          {content}
-        </ResultsPanel>
-      </div>
+      <ResultsPanel
+        className={panelClassNames}
+        style={style}
+        position={this.state.position}>
+        {content}
+      </ResultsPanel>
     );
   };
 }

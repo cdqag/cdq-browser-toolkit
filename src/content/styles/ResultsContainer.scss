@@ -1,12 +1,62 @@
 @import "/src/common/styles/colors.scss";
+@import "/src/common/styles/typography.scss";
 
 @include inject-colors($el: "#cdq-browser-toolkit");
 
-#cdq-browser-toolkit {
-  all: initial;
-  position: absolute;
+$common-margin: 0.5rem 1rem;
 
-  & > div {
-    all: initial;
+#cdq-browser-toolkit {
+  all: unset;
+  position: absolute;
+  
+  @include font-family($important: true);
+  @include font-main-text();
+
+  * {
+    all: unset;
+    @include font-family($important: true);
+  }
+
+  div {
+    display: block;
+  }
+
+  & > div > div > div {
+    margin: $common-margin;
+  }
+
+  .cdq-browser-toolkit-h2 {
+    @include font-h2();
+
+    &:first-child {
+      margin-top: 1rem;
+    }
+  }
+
+  .cdq-browser-toolkit-p {
+    @include font-main-text();
+  }
+
+  .cdq-browser-toolkit-table {
+    display: table;
+
+    & > .cdq-browser-toolkit-table-row {
+      display: table-row;
+
+      & > div[class^="cdq-browser-toolkit-table-cell"] {
+        display: table-cell;
+        text-align: left;
+        line-height: 1.25;
+        padding: 0 0.5rem 0.5rem 0;
+      }
+
+      .cdq-browser-toolkit-table-cell-label {
+        @include font-sub-text();
+      }
+
+      .cdq-browser-toolkit-table-cell-value {
+        @include font-textarea();
+      }
+    }
   }
 }
