@@ -33,14 +33,14 @@ $font-family: "Segoe UI", "San Francisco", "Ubuntu", "Fira Sans", "Roboto", "Ari
 }
 
 @mixin font-h1() {
-  font-weight: 200;
+  font-weight: 300;
   font-size: 2rem;
   color: var(--cdq-browser-toolkit-sub-text);
   line-height: 2;
 }
 
 @mixin font-h2() {
-  font-weight: 200;
+  font-weight: 300;
   font-size: 1.5rem;
   color: var(--cdq-browser-toolkit-sub-text);
   line-height: 2;
