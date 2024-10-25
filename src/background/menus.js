@@ -37,7 +37,8 @@ export const onMenusClickedListener = (info, tab) => {
 
   case "emailVerifyMenuItem":
     browser.tabs.sendMessage(tab.id, {
-      message: "emailVerifyMenuItemClicked"
+      message: "emailVerifyMenuItemClicked",
+      payload: info.linkUrl
     });
     break;
   }

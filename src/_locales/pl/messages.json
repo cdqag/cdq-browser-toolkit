@@ -353,6 +353,9 @@
   "notImplementedError": {
     "message": "Błąd: Funkcjonalność nie zaimplementowana."
   },
+  "emailVerifyInvalidEmailError": {
+    "message": "Błąd: Niepoprawny adres e-mail."
+  },
   "translatePageMenu": {
     "message": "Przetłumacz tę stronę"
   },

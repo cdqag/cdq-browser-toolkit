@@ -37,6 +37,7 @@ export default [
       "indent": ["error", 2],
       "linebreak-style": ["error", "unix"],
       "no-prototype-builtins": "off",
+      "no-control-regex": "off",
 
       "react/no-deprecated": "off",
       "react/prop-types": "off",

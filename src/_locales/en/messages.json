@@ -353,6 +353,9 @@
   "notImplementedError": {
     "message": "Error: Function not implemented."
   },
+  "emailVerifyInvalidEmailError": {
+    "message": "Error: Invalid email address."
+  },
   "translatePageMenu": {
     "message": "Translate this page"
   },

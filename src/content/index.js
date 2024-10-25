@@ -7,8 +7,13 @@ import { waitTime, dummyPromise } from "src/common/utils";
 import { getSelectedText, getSelectedPosition  } from './selection'
 import ResultsContainer from "./components/ResultsContainer";
 
-let prevSelectedText = "";
 let isEnabled = true;
+
+let prevSelectedText = "";
+let lastMousePosition = { x: 0, y: 0 };
+
+let EMAIL_ADDRESS_PATTERN = /(?:[a-z0-9!#$%&'*+=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/;
+
 const content = {
   result: null,
   error: null,
@@ -38,6 +43,15 @@ const handleMouseUp = async e => {
 };
 
 /**
+ * Handle context menu open event
+ * @param {PointerEvent} e
+ */
+const handleContextMenuOpen = async e => {
+  lastMousePosition.x = e.clientX;
+  lastMousePosition.y = e.clientY;
+};
+
+/**
  * Handle key down event
  * @param {KeyboardEvent} e 
  */
@@ -64,7 +78,6 @@ const handleVisibilityChange = () => {
  * @returns 
  */
 const handleMessage = async request => {
-
   // Handle control messages
   switch (request.message) {
   case "getTabUrl":
@@ -93,11 +106,21 @@ const handleMessage = async request => {
     
   }
 
+  // Handle menu item clicked messages
   if (request.message.endsWith("MenuItemClicked")) {
     if (!isEnabled) { return dummyPromise; }
-    const selectedText = getSelectedText();
-    if (selectedText.length === 0) { return; }
-    const position = getSelectedPosition();
+
+    let text;
+    let position;
+
+    if (request.payload) {
+      text = request.payload;
+      position = lastMousePosition;
+    } else {
+      text = getSelectedText();
+      if (text.length === 0) { return; }
+      position = getSelectedPosition();
+    }
 
     removeResultsContainer();
     showResultsContainer(position);
@@ -108,15 +131,29 @@ const handleMessage = async request => {
     case "bankAccountNameLookupMenuItemClicked": {
       responseObject = await browser.runtime.sendMessage({
         message: "bankAccountNameLookupFetch",
-        text: selectedText,
+        text,
       });
       break;
     }
   
     case "emailVerifyMenuItemClicked": {
+      if (text.startsWith("mailto:")) {
+        text = text.replace("mailto:", "");
+      }
+
+      const m = text.match(EMAIL_ADDRESS_PATTERN);
+      if (!m) {
+        responseObject = {
+          result: null,
+          error: browser.i18n.getMessage("emailVerifyInvalidEmailError")
+        };
+        break;
+      }
+      text = m[0];
+
       responseObject = await browser.runtime.sendMessage({
         message: "emailVerifyFetch",
-        text: selectedText,
+        text,
       });
       break;
     }
@@ -134,6 +171,7 @@ const handleMessage = async request => {
     return;
   }
 
+  // Fallback
   return dummyPromise;
 };
 
@@ -186,6 +224,7 @@ const removeResultsContainer = async () => {
 const init = async () => {
   await initSettings();
   document.addEventListener("mouseup", handleMouseUp);
+  document.addEventListener("contextmenu", handleContextMenuOpen);
   document.addEventListener("keydown", handleKeyDown);
   document.addEventListener("visibilitychange", handleVisibilityChange);
   browser.storage.local.onChanged.addListener(handleSettingsChange);
@@ -194,4 +233,7 @@ const init = async () => {
   updateLogLevel();
 };
 
-init();
+if (window.self === window.top) {
+  // Iframe protection
+  init();
+}

@@ -353,6 +353,9 @@
   "notImplementedError": {
     "message": "Fehler: Diese Funktion ist noch nicht implementiert."
   },
+  "emailVerifyInvalidEmailError": {
+    "message": "Fehler: Ungültige E-Mail-Adresse"
+  },
   "translatePageMenu": {
     "message": "Diese Seite übersetzen"
   },
