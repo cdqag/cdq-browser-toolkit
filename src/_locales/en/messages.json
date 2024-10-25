@@ -356,6 +356,12 @@
   "emailVerifyInvalidEmailError": {
     "message": "Error: Invalid email address."
   },
+  "invalidBankAccountNumberError": {
+    "message": "Error: Invalid bank account number."
+  },
+  "bankAccountNumberWithoutCountryCodeError": {
+    "message": "Error: Provided bank account number is without country code and the extension could not automatically determine one."
+  },
   "translatePageMenu": {
     "message": "Translate this page"
   },
@@ -377,6 +383,9 @@
   },
   "bankAccountNameLookup": {
     "message": "Find bank account name"
+  },
+  "checkBankAccountScore": {
+    "message": "Check bank account score"
   },
   "emailVerify": {
     "message": "Verify email"
@@ -436,6 +445,29 @@
   },
   "isRoleBasedLabel": {
     "message": "Role Based"
+  },
+
+  "resultLabel": {
+    "message": "Result"
+  },
+  "trustScoreLabel": {
+    "message": "Trust Score"
+  },
+  "numberOfCompaniesLabel": {
+    "message": "Number of Companies"
+  },
+  "numberOfPaymentsLabel": {
+    "message": "Number of Payments"
+  },
+  "lastPaymentAtLabel": {
+    "message": "Last Payment At"
+  },
+
+  "bankAccountConfirmed": {
+    "message": "Bank account confirmed"
+  },
+  "bankAccountNotConfirmed": {
+    "message": "Could not confirm bank account"
   },
 
   "pleaseWait": {

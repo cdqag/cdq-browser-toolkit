@@ -35,6 +35,12 @@ export const onMenusClickedListener = (info, tab) => {
     });
     break;
 
+  case "checkBankAccountScoreMenuItem":
+    browser.tabs.sendMessage(tab.id, {
+      message: "checkBankAccountScoreMenuItemClicked"
+    });
+    break;
+
   case "emailVerifyMenuItem":
     browser.tabs.sendMessage(tab.id, {
       message: "emailVerifyMenuItemClicked",
@@ -52,6 +58,12 @@ function createMenus() {
   });
 
   browser.contextMenus.create({
+    id: "checkBankAccountScoreMenuItem",
+    title: browser.i18n.getMessage("checkBankAccountScore"),
+    contexts: ["selection"]
+  });
+
+  browser.contextMenus.create({
     id: "emailVerifyMenuItem",
     title: browser.i18n.getMessage("emailVerify"),
     contexts: ["selection", "link"]
@@ -61,15 +73,3 @@ function createMenus() {
 function removeMenus() {
   browser.contextMenus.removeAll();
 }
-
-// function translateLink(info, tab) {
-//   const targetLang = getSettings("targetLang");
-//   const encodedLinkUrl = encodeURIComponent(info.linkUrl);
-//   const translationUrl = `https://translate.google.com/translate?hl=${targetLang}&tl=${targetLang}&sl=auto&u=${encodedLinkUrl}`;
-
-//   browser.tabs.create({
-//     url: translationUrl,
-//     active: true,
-//     index: tab.index + 1
-//   });
-// }

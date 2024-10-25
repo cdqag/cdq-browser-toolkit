@@ -356,6 +356,12 @@
   "emailVerifyInvalidEmailError": {
     "message": "Błąd: Niepoprawny adres e-mail."
   },
+  "invalidBankAccountNumberError": {
+    "message": "Błąd: Niepoprawny numer konta bankowego."
+  },
+  "bankAccountNumberWithoutCountryCodeError": {
+    "message": "Błąd: Podany numer konta bankowego nie zawiera kodu kraju, a rozszerzenie nie mogło go automatycznie ustalić."
+  },
   "translatePageMenu": {
     "message": "Przetłumacz tę stronę"
   },
@@ -377,6 +383,9 @@
   },
   "bankAccountNameLookup": {
     "message": "Znajdź bank po nazwie"
+  },
+  "checkBankAccountScore": {
+    "message": "Sprawdź ocenę konta bankowego"
   },
   "emailVerify": {
     "message": "Zweryfikuj adres e-mail"
@@ -436,6 +445,29 @@
   },
   "isRoleBasedLabel": {
     "message": "Oparty na roli"
+  },
+
+  "resultLabel": {
+    "message": "Wynik"
+  },
+  "trustScoreLabel": {
+    "message": "Ocena zaufania"
+  },
+  "numberOfCompaniesLabel": {
+    "message": "Liczba firm"
+  },
+  "numberOfPaymentsLabel": {
+    "message": "Liczba płatności"
+  },
+  "lastPaymentAtLabel": {
+    "message": "Ostatnia płatność"
+  },
+
+  "bankAccountConfirmed": {
+    "message": "Konto bankowe potwierdzone"
+  },
+  "bankAccountNotConfirmed": {
+    "message": "Konto bankowe nie potwierdzone"
   },
 
   "pleaseWait": {

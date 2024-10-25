@@ -356,6 +356,12 @@
   "emailVerifyInvalidEmailError": {
     "message": "Fehler: Ungültige E-Mail-Adresse"
   },
+  "invalidBankAccountNumberError": {
+    "message": "Fehler: Ungültige Bankkontonummer"
+  },
+  "bankAccountNumberWithoutCountryCodeError": {
+    "message": "Fehler: Die angegebene Bankkontonummer hat keinen Ländercode und die Erweiterung konnte keinen automatisch ermitteln."
+  },
   "translatePageMenu": {
     "message": "Diese Seite übersetzen"
   },
@@ -377,6 +383,9 @@
   },
   "bankAccountNameLookup": {
     "message": "Bankkontoname suchen"
+  },
+  "checkBankAccountScore": {
+    "message": "Bankkontowert überprüfen"
   },
   "emailVerify": {
     "message": "E-Mail-Überprüfung"
@@ -436,6 +445,29 @@
   },
   "isRoleBasedLabel": {
     "message": "Rollenbasiert"
+  },
+
+  "resultLabel": {
+    "message": "Ergebnis"
+  },
+  "trustScoreLabel": {
+    "message": "Vertrauenswert"
+  },
+  "numberOfCompaniesLabel": {
+    "message": "Anzahl der Unternehmen"
+  },
+  "numberOfPaymentsLabel": {
+    "message": "Anzahl der Zahlungen"
+  },
+  "lastPaymentAtLabel": {
+    "message": "Letzte Zahlung"
+  },
+
+  "bankAccountConfirmed": {
+    "message": "Bankkonto bestätigt"
+  },
+  "bankAccountNotConfirmed": {
+    "message": "Bankkonto nicht bestätigt"
   },
 
   "pleaseWait": {

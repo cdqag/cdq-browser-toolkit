@@ -7,7 +7,7 @@ export const getSelectedText = () => {
     ? element.value.substring(element.selectionStart, element.selectionEnd)
     : window.getSelection()?.toString() ?? "";
   
-  return selectedText.trim();
+  return selectedText;
 };
 
 export const getSelectedPosition = () => {

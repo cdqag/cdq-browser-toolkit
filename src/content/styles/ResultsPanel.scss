@@ -1,10 +1,13 @@
 @import "/src/common/styles/typography.scss";
 
-$color-risk-very-low: #00993e;
+$color-green: #00993e;
+$color-red: #af0303;
+
+$color-risk-very-low: $color-green;
 $color-risk-low: #2caf03;
 $color-risk-medium: #abaf03;
 $color-risk-high: #af3c03;
-$color-risk-very-high: #af0303;
+$color-risk-very-high: $color-red;
 
 #cdq-browser-toolkit {
   #cdq-browser-toolkit-panel {
@@ -65,6 +68,14 @@ $color-risk-very-high: #af0303;
 
       .risk-marked-yes {
         color: $color-risk-very-high;
+      }
+
+      .color-green {
+        color: $color-green;
+      }
+
+      .color-red {
+        color: $color-red;
       }
     }
 

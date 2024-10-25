@@ -1,6 +1,5 @@
 import browser from "webextension-polyfill";
 
-
 export const getHistory = async (endpoint, method, text) => {
   const responseObject = await browser.storage.session.get(`${endpoint}-${method}-${text}`);
   return responseObject[`${endpoint}-${method}-${text}`] ?? false;
