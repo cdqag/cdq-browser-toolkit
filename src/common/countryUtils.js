@@ -115,5 +115,5 @@ export const getCountryCode = (tld) => {
     return TOP_LEVEL_DOMAIN_TO_COUNTRY_CODE[tld];
   }
 
-  throw new Error(`No country code found for TLD: ${tld}`);
+  throw new Error(`No country code found for Top-Level Domain: ${tld}`);
 }
